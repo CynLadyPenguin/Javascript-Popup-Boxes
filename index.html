@@ -36,12 +36,24 @@
       <button class="button" style="
       background-color: rgb(93, 8, 172);
         color:rgb(9, 148, 199);
-        font-weight: bolder;">Go Go Power Rangers</button>
+        font-weight: bolder;"
+        onclick="changeWallpaper()">Go Go Power Rangers</button>
     </div>
     <script>
       function alertFunction() {
        alert("you are being alerted of this alert");
        alert("This is another alert\nSo you can see how to add a line");
+      }
+    </script>
+    <script>
+      function changeWallpaper() {
+        confirm('Call the Power Rangers?');
+        if(true) {
+          $('body').css({'background-image':'url(images/Image20230418104213.png)',
+          'background-position': 'center center',
+          'background-repeat': 'no-repeat',
+          'background-size': 'cover', 'background-attachment':'fixed'});
+        }
       }
     </script>
     <script src="index.js"></script>
